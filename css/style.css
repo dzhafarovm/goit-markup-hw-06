@@ -802,6 +802,10 @@ img {
   fill: var(--accent-color);
 }
 
+.form-field:hover input {
+  cursor: pointer;
+}
+
 textarea {
   resize: none;
   padding: 16px;
