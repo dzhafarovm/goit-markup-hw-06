@@ -819,7 +819,7 @@ textarea {
 }
 
 .form-policy {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -827,12 +827,46 @@ textarea {
 }
 
 .form-policy span {
+  display: flex;
+  align-items: center;
   margin-left: 10px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-policy span::before {
+  content: '';
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 4px;
+}
+
+.checkbox:checked + span::before {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .form-policy a {
