@@ -802,8 +802,9 @@ textarea {
 .form-policy {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
-  outline: 1px solid red;
+  width: 100%;
 }
 
 .form-policy label {
