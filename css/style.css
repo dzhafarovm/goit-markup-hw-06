@@ -2,6 +2,7 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --btn-hover-color: #188ce8;
   --white-color: #ffffff;
   --black-color: #000000;
   --secondary-bg-color: #2f303a;
@@ -211,6 +212,10 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: var(--btn-hover-color);
 }
 
 /* Наши возможности */
@@ -546,6 +551,10 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.foot-btn:hover {
+  background-color: var(--btn-hover-color);
 }
 
 .foot-svg {
@@ -901,4 +910,8 @@ textarea {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: var(--btn-hover-color);
 }
